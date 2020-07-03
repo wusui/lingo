@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>LINGO</title>
+        <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/constants.js"></script>
+    <script type="text/javascript" src="js/ioModule.js"></script>
+    <script type="text/javascript" src="js/startup.js"></script>
+    <script type="text/javascript" src="js/buttonh.js"></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
+    </head>
+    <body style="font-family:arial;" onload="startup.onloadFunc()">
+        <div style="text-align:center;" >
+            <h1>LINGO</h1>
+            <br>
+            <canvas id="myCanvas1" width="500" height="500"></canvas>
+            <br>
+            <br>
+            <label for="guess" style="font-size:20px">Guess a word: </label>
+            <input type="text" id="guess" name="guess">
+            <br>
+            <br>
+            <input type="button" id="bbutton" disabled value="Submit" onClick="buttonh.readbutton()">
+        </div>
+    </body>
+</html>
